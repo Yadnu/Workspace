@@ -9,12 +9,8 @@ const DocumentPage = async ({params}: DocumentIdPageProps) => {
   const document = await params;
   const docId = document.document
   return (
-    <div className='flex min-h-screen items-center justify-center flex-col'> 
-        <h1 className="text-2xl font-bold">Document Page</h1>
+    <div className='min-h-screen bg-[#F9FBFD] px-4 print:p-0 print:bg-white print:overflow-visible'> 
         <Editor/>
-        <p>This is the document page.</p>
-        <p>Document ID: {docId}</p>
-        <p>Here you can view and edit your documents.</p>
     </div>
   )
 }
